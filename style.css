@@ -1,0 +1,47 @@
+#backgroundText {
+  font-family: "Suwannaphum", serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #333;
+  opacity: 0.8;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure perfect centering */
+  z-index: 0; /* Text stays behind */
+  pointer-events: none; /* Prevent interaction */
+}
+
+#textEmojiContainer {
+  position: absolute; /* Position the entire container absolutely */
+  top: 50%; /* Center on the page */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the entire container */
+  width: max-content; /* Adjust container size dynamically */
+  z-index: 1; /* Ensure the container elements stay above other content */
+}
+
+#backgroundText {
+  z-index: 0; /* Keep text behind */
+  pointer-events: none; /* Maintain no interaction */
+}
+
+svg {
+  position: relative; /* Position relative to the container */
+  z-index: 1; /* Keep above text */
+  width: 100%;
+  height: auto; /* Responsive height */
+}
+
+/* Emoji styling */
+#emoji {
+  font-size: 50px; /* Adjust as needed */
+  text-anchor: middle;
+  user-select: none;
+}
+
+#additionalText {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}

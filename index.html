@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Emoji Bounce Saturday Test 1.1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Suwannaphum:wght@100;300;400;700;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="textEmojiContainer">
+  <!-- Background Text -->
+  <div id="backgroundText">supremely&nbsp;f&nbsp;&nbsp;cked</div>
+  <!-- This div contains the background text which appears as "supremely f cked" -->
+  <!-- The "nbsp;" entities are used to add non-breaking spaces in the text -->
+
+  <!-- SVG Animation -->
+  <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+
+    <g id="emojiContainer" transform="translate(185, -25)">
+      <!-- The emoji container is moved by 50 pixels along the X-axis and 100 pixels along the Y-axis -->
+
+      <text id="emoji" x="50%" y="400"> 😮 </text>
+      <!-- You can adjust the positioning of the emoji text relative to this container -->
+    </g>
+    <g id="shadow" transform="translate(50, 100)">
+      <!-- The shadow is also moved along with the emoji container -->
+      <line x1="360" y1="420" x2="440" y2="420" stroke="#fff" stroke-width="0" stroke-linecap="round" />
+    </g>
+  </svg>
+
+  <!-- Additional Text Below -->
+  <div id="additionalText">A poignant platform; coming soon.</div>
+</div>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js'></script>
+<script src='//s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.js?r=12'></script><script  src="./script.js"></script>
+
+</body>
+</html>
